@@ -36,6 +36,7 @@ var read = function (sender, message, reply) {
 		// Let's reply back hello
 		message = 'Hello yourself! I am a chat bot. You can say "show me pics of corgis"'
 		reply(sender, message)
+		console.log('mensagem facebook', message)
 	} else {
 		// Let's find the user
 		var sessionId = findOrCreateSession(sender)
